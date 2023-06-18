@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "9528f30d-b343-4c6a-afde-009372fdf8f6",
+		"name": "Like-DB-Food",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26931391"
+	},
+	"item": [
+		{
+			"name": "post like",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"user_id\": 2,\r\n   \"res_id\": 5\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/like/post-like",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"like",
+						"post-like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get like for res",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/like/get-like/res/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"like",
+						"get-like",
+						"res",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get like for user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/like/get-like/user/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"like",
+						"get-like",
+						"user",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post rate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"user_id\": 1,\r\n   \"res_id\": 2,\r\n   \"amount\" : 3\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rate/post-rate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rate",
+						"post-rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get rate for res",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get rate for user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "post order",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
